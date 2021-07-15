@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* global */
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+body {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+img{
+    vertical-align: middle
+}
+
+
+/* font-size */
+.fz-s{
+    font-size: 20px;
+    line-height: 30px;
+}
+.fz-m{
+    font-size: 24px;
+    line-height: 36px;
+}
+.fz-ml{
+    font-size: 24px;
+    line-height: 42px;
+}
+.fz-l{
+    font-size: 64px;
+    line-height: 84px;
+}
+.fz-xl{
+    font-size: 80px;
+    line-height: 106px;
+}
+/* color */
+.tc-b{
+    color: #000;
+}
+.tc-w{
+    color: #ffff;
+}
+/* margin */
+.mb-4{
+    margin-bottom: 4px;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-56{
+    margin-bottom: 56px;
+}
+.mb-68{
+    margin-bottom: 68px;
+}
+.mb-96{
+    margin-bottom: 96px;
+}
+/* img */
+.img-l{
+    width: 792px;
+    height: 416px;
+    margin-left: 204px;
+    margin-right: 204px;
+}
+.img-m{
+    width: 588px;
+    height: 416px;
+}
+
+
+.header{
+    width: 1920px;
+    max-width: 100%;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png) center center;
+    padding: 308px 0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_content{
+    display: block;
+    color: #ffff;
+}
+.linkbar{
+    display: flex;
+    justify-content: space-between;
+}
+.linkbar a{
+    width: 66px;
+    height: 66px;
+    display: block;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-size: cover;
+}
+.linkbar_item-be{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/behance.svg);
+}
+.linkbar_item-fb{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/facebook.svg);
+}
+.linkbar_item-ig{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/instagram.svg);
+}
+.linkbar_item-yt{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/youtube.svg);
+}
+.linkbar a:hover{
+    opacity:0.9;
+}
+
+.introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduct_content{
+    width: 412px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience{
+    max-width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #000;
+    margin-bottom: 56px;
+}
+.experience .experience_item{
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+}
+.circle{
+    width: 22px;
+    height: 22px;
+    background:#891818;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.mybrand{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+.mybrand_content{
+    width: 1200px;
+    padding-top: 56px;
+    padding-bottom: 160px;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.mybrand_content_text{
+    width: 320px;
+}
+.mybrand_content_photobar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.otherworks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+}
+.otherworks_photobar{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.otherworks_photobar li{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+.otherworks_photobar li p{
+    margin-top: 16px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    padding-top: 64px;
+    padding-bottom: 60px;
+}
+.footer_content{
+    color: #ffff;
+    text-align: center;
+}
+.footer_content a{
+    color: #ffff;
+    text-decoration: none;
+}
+.footer_content a:hover{
+    opacity:0.7;
+}

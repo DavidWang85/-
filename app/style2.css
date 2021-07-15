@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* global */
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+body {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 42px;
+}
+img{
+    vertical-align: middle
+}
+
+/* textcolor */
+.primary{
+    color: #000;
+}
+.secondary{
+    color: #ffff;
+}
+
+.fz-s{
+    font-size: 20px;
+    line-height: 30px;
+}
+.fz-m{
+    font-size: 24px;
+    line-height: 36px;
+}
+.fz-m-plusheight{
+    font-size: 24px;
+    line-height: 42px;
+}
+.fz-l{
+    font-size: 64px;
+    line-height: 84px;
+}
+.fz-xl{
+    font-size: 80px;
+    line-height: 106px;
+}
+
+
+.mb-1{
+    margin-bottom: 4px;
+}
+.mb-2{
+    margin-bottom: 8px;
+}
+.mb-3{
+    margin-bottom: 12px;
+}
+.mb-4{
+    margin-bottom: 16px;
+}
+.mb-5{
+    margin-bottom: 20px;
+}
+.mb-6{
+    margin-bottom: 24px;
+}
+.mb-7{
+    margin-bottom: 28px;
+}
+.mb-8{
+    margin-bottom: 32px;
+}
+.mb-9{
+    margin-bottom: 36px;
+}
+.mb-10{
+    margin-bottom: 40px;
+}
+.mb-14{
+    margin-bottom: 56px;
+}
+.mb-17{
+    margin-bottom: 68px;
+}
+.mb-4{
+    margin-top: 16px;
+}
+
+.header{
+    height: 958px;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png) center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_content .linkbar{
+    display: flex;
+    justify-content: space-between;
+}
+.linkbar a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.linkbar a:hover{
+    opacity: 0.8;
+}
+.be{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/behance.svg);
+}
+.fb{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/facebook.svg);
+}
+.ig{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/instagram.svg);
+}
+.yt{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/youtube.svg);
+}
+
+
+.container{
+    margin: 0 auto;
+    text-align: center;
+}
+.about_content{
+    padding: 56px 0;
+}
+.about_content_experience{
+    margin: 0 auto;
+    width: 384px;
+    border-top: 1px solid #000;
+    
+}
+.about_content_experience li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+}
+.about_content_experience li .circle{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #891818;
+    margin-right: 16px;
+}
+.mybrand{
+    background: #000;
+}
+.mybrand_content{
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 120px;
+}
+.mybrand_content_photobar{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mybrand_content_photobar li{
+    margin-bottom: 40px;
+}
+.mybrand_content_photobar .photo-l{
+    margin-right: 192px;
+    margin-left: 192px;
+}
+.otherworks_content{
+    padding-top: 56px;
+    padding-bottom: 160px;
+}
+.otherworks_content_photobar{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.otherworks_content_photobar li{
+    margin-bottom: 48px;
+}
+.footer{
+    background: #000;
+}
+.footer_content{
+    padding: 56px 0;
+    color: #ffff;
+}
+.footer_content a{
+    text-decoration: none;
+    color: #ffff;
+}
+.footer_content a:hover{
+    opacity: 0.8;
+}
